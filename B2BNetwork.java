@@ -32,7 +32,6 @@ public class B2BNetwork {
 
 		// Task 3
 		driver.findElement(By.cssSelector("a[href*='kolor=czarny']")).click();
-		Thread.sleep(3000);
 		Assert.assertTrue(driver.findElement(By.xpath("//div[contains(text(),'czarny')]")).isDisplayed());
 
 		// Task 4
