@@ -5,7 +5,7 @@ import org.testng.Assert;
 
 public class B2BNetwork {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 
 		// Initializing variables used in Test Case
 		double max = 0;
