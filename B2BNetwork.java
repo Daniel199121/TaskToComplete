@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,7 +12,7 @@ public class B2BNetwork {
 		// Initializing variables used in Test Case
 		double max = 0;
 		double doubleValue;
-		double maxGrossGross;
+		BigDecimal maxGrossGross;
 		int counterSponsored;
 		int counterSearched;
 		String element;
@@ -58,7 +60,8 @@ public class B2BNetwork {
 		System.out.println("Największa cena (bez sponsorowanych) - to: " + String.format("%.2f", max) + " zł");
 
 		// Task 6
-		maxGrossGross = max * 1.23;
+		maxGrossGross = BigDecimal.valueOf(max);
+		maxGrossGross = maxGrossGross.multiply(BigDecimal.valueOf(1.23));
 		System.out.println("Największa cena + 23% (bez sponsorowanych) - to: " + String.format("%.2f", maxGrossGross) + " zł");
 	}
 }
